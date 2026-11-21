@@ -1,0 +1,165 @@
+{
+  "source_directory": "../T12_Images",
+  "seed": 473,
+  "val_fraction": 0.1,
+  "split_method": "Per class: sorted filenames, random.Random(seed + folder_label), rounded 10% for VAL; remaining images for TRAIN. Matches existing results/data indices.",
+  "counts": {
+    "train": 11388,
+    "val": 1265,
+    "test": 0
+  },
+  "per_class": [
+    {
+      "class": "0_n01667778",
+      "label": 0,
+      "source": 1300,
+      "train": 1170,
+      "val": 130,
+      "test": 0
+    },
+    {
+      "class": "1_n01855032",
+      "label": 1,
+      "source": 1141,
+      "train": 1027,
+      "val": 114,
+      "test": 0
+    },
+    {
+      "class": "2_n02099267",
+      "label": 2,
+      "source": 1300,
+      "train": 1170,
+      "val": 130,
+      "test": 0
+    },
+    {
+      "class": "3_n02099429",
+      "label": 3,
+      "source": 1218,
+      "train": 1096,
+      "val": 122,
+      "test": 0
+    },
+    {
+      "class": "4_n02115913",
+      "label": 4,
+      "source": 1300,
+      "train": 1170,
+      "val": 130,
+      "test": 0
+    },
+    {
+      "class": "5_n03000684",
+      "label": 5,
+      "source": 1194,
+      "train": 1075,
+      "val": 119,
+      "test": 0
+    },
+    {
+      "class": "6_n03127747",
+      "label": 6,
+      "source": 1300,
+      "train": 1170,
+      "val": 130,
+      "test": 0
+    },
+    {
+      "class": "7_n03496892",
+      "label": 7,
+      "source": 1300,
+      "train": 1170,
+      "val": 130,
+      "test": 0
+    },
+    {
+      "class": "8_n04557648",
+      "label": 8,
+      "source": 1300,
+      "train": 1170,
+      "val": 130,
+      "test": 0
+    },
+    {
+      "class": "9_n07717556",
+      "label": 9,
+      "source": 1300,
+      "train": 1170,
+      "val": 130,
+      "test": 0
+    }
+  ],
+  "class_mappings": [
+    {
+      "directory": "0_n01667778",
+      "wnid": "n01667778",
+      "train_label": 0,
+      "folder_label": 0
+    },
+    {
+      "directory": "1_n01855032",
+      "wnid": "n01855032",
+      "train_label": 1,
+      "folder_label": 1
+    },
+    {
+      "directory": "2_n02099267",
+      "wnid": "n02099267",
+      "train_label": 2,
+      "folder_label": 2
+    },
+    {
+      "directory": "3_n02099429",
+      "wnid": "n02099429",
+      "train_label": 3,
+      "folder_label": 3
+    },
+    {
+      "directory": "4_n02115913",
+      "wnid": "n02115913",
+      "train_label": 4,
+      "folder_label": 4
+    },
+    {
+      "directory": "5_n03000684",
+      "wnid": "n03000684",
+      "train_label": 5,
+      "folder_label": 5
+    },
+    {
+      "directory": "6_n03127747",
+      "wnid": "n03127747",
+      "train_label": 6,
+      "folder_label": 6
+    },
+    {
+      "directory": "7_n03496892",
+      "wnid": "n03496892",
+      "train_label": 7,
+      "folder_label": 7
+    },
+    {
+      "directory": "8_n04557648",
+      "wnid": "n04557648",
+      "train_label": 8,
+      "folder_label": 8
+    },
+    {
+      "directory": "9_n07717556",
+      "wnid": "n07717556",
+      "train_label": 9,
+      "folder_label": 9
+    }
+  ],
+  "label_note": "Folder labels 0-9 are subset labels, not verified official ILSVRC ground-truth IDs. Official TEST labels must be mapped to these classes by WNID using the official devkit.",
+  "official_test_status": "pending: official ILSVRC-2012 validation images and ground truth are absent",
+  "official_test_expected_per_class": 50,
+  "official_test_expected_total": 500,
+  "index_path_base": "Image paths are relative to T12_Splits. source_relative_path is relative to its parent DataSet folder.",
+  "verification": {
+    "source_coverage": true,
+    "train_val_source_overlap": 0,
+    "copied_bytes_sha256_match": true
+  }
+}
