@@ -1,3 +1,14 @@
+## Dataset Array & Format (Member A Deliverable)
+
+Build the single `.npz` dataset archive and standalone TRAIN/VAL split index files from `T12_Splits/` (TEST is never touched):
+
+```bash
+python3 scripts/build_dataset.py
+python3 -m unittest discover -s tests -v
+```
+
+This creates `results/data/dataset.npz` (gitignored because it exceeds GitHub's 100 MB limit) with keys `x`, `y`, `train_idx`, `val_idx`, along with `train_idx.npy`/`.json`, `val_idx.npy`/`.json`, `array_index.csv`, and `dataset_format.json`. See `DATA_FORMAT.md` for exact dtypes, shapes, and a `train_vae.py` `load()` example.
+
 ## Windows local commands
 
 ```powershell
