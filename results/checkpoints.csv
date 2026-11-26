@@ -1,0 +1,7 @@
+model_id,milestone,member,latent_dim,checkpoint_file,sha256,cloud_url,chosen
+vae_default,M1,Bola,64,vae_default_final.pt,83cdd89df888787303ef5cbb8761aee8e59a15e80f498a21432645070c564d28,https://drive.google.com/drive/folders/1jIowvV_l4pK7qoiIGQnYb5iiPVcF7jYq?usp=sharing,NO
+vae_z32,M1,Bola,32,vae_z32_final.pt,85e328b766fde363e42bba51b757e830db1090c154f8ab87219fd356d519f6d9,https://drive.google.com/drive/folders/1jIowvV_l4pK7qoiIGQnYb5iiPVcF7jYq?usp=sharing,NO
+vae_z128,M1,Bola,128,vae_z128_final.pt,3c1c652890a9df4735f563e79ff4ac0eb61c99df043d5fd25be6a0e0379e63d3,https://drive.google.com/drive/folders/1jIowvV_l4pK7qoiIGQnYb5iiPVcF7jYq?usp=sharing,YES
+vae_beta0.25,M1,Bola,64,vae_beta0.25_final.pt,23c587dfe5e295772bacf59f021fcdf6d61d0fd41baa7c28987503cc793046f8,https://drive.google.com/drive/folders/1jIowvV_l4pK7qoiIGQnYb5iiPVcF7jYq?usp=sharing,NO
+vae_beta4,M1,Bola,64,vae_beta4_final.pt,c115dc209b316ecdc8b1d17b5d075a969c7091b805208f387b437e76c09499f4,https://drive.google.com/drive/folders/1jIowvV_l4pK7qoiIGQnYb5iiPVcF7jYq?usp=sharing,NO
+vae_warmup_off,M1,Bola,64,vae_warmup_off_final.pt,d463133af9b162de74a49d5446e1743306039afcf9be9b7addc8c81b375dab72,https://drive.google.com/drive/folders/1jIowvV_l4pK7qoiIGQnYb5iiPVcF7jYq?usp=sharing,NO

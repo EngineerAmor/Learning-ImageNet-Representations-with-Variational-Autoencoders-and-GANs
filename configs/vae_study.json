@@ -1,0 +1,50 @@
+{
+  "study": "Milestone 1 — Controlled Convolutional VAE Study (6 Runs, One Change at a Time)",
+  "defaults": {
+    "latent_dim": 64,
+    "beta": 1.0,
+    "warmup_epochs": 10,
+    "sigma2": 0.5,
+    "epochs": 40,
+    "batch_size": 128,
+    "lr": 0.001,
+    "seed": 473
+  },
+  "selection": {
+    "metric": "val_neg_elbo",
+    "beta_eval": 1.0,
+    "min_active_units": 16,
+    "description": "Lowest VAL negative ELBO (computed at beta = 1) among non-collapsed runs with >= 16 active latent units (posterior-mean variance over VAL > 0.01)."
+  },
+  "runs": [
+    {
+      "name": "default",
+      "description": "Baseline: latent_dim=64, beta=1.0, linear KL warm-up ON (10 epochs)"
+    },
+    {
+      "name": "z32",
+      "latent_dim": 32,
+      "description": "Smaller bottleneck: latent_dim=32 (1 change from default)"
+    },
+    {
+      "name": "z128",
+      "latent_dim": 128,
+      "description": "Larger bottleneck: latent_dim=128 (1 change from default)"
+    },
+    {
+      "name": "beta0.25",
+      "beta": 0.25,
+      "description": "Lower KL penalty: beta=0.25 (1 change from default)"
+    },
+    {
+      "name": "beta4",
+      "beta": 4.0,
+      "description": "Higher KL penalty (beta-VAE): beta=4.0 (1 change from default)"
+    },
+    {
+      "name": "warmup_off",
+      "warmup_epochs": 0,
+      "description": "KL warm-up switched OFF: full beta=1.0 from epoch 1 (1 change from default)"
+    }
+  ]
+}
