@@ -1,0 +1,18 @@
+{
+  "selected_run": "z128",
+  "criterion": "Lowest VAL negative ELBO (beta=1) with active_units >= 16",
+  "checkpoint_path": "/content/drive/MyDrive/CI_Checkpoints_M1/vae_z128_final.pt",
+  "checkpoint_sha256": "3c1c652890a9df4735f563e79ff4ac0eb61c99df043d5fd25be6a0e0379e63d3",
+  "latent_dim": 128,
+  "val_metrics": {
+    "val_recon": 190.9809345592152,
+    "val_kl": 71.59947313753513,
+    "val_neg_elbo": 262.58040769675034,
+    "val_mse_per_pixel": 0.013458208415819252,
+    "active_units": 128,
+    "latent_dim": 128,
+    "posterior_mean_var_min": 0.012897941283881664,
+    "posterior_mean_var_median": 0.5099385976791382,
+    "posterior_mean_var_max": 1.6474193334579468
+  }
+}
