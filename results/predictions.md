@@ -16,3 +16,16 @@
    - Without KL warm-up (`warmup_off`), applying the full `beta = 1` penalty from epoch 1 lets the optimiser cheaply reduce loss early by driving `mu_k(x) -> 0` before the decoder learns useful filters, resulting in fewer active units than `default`.
 4. **Expected winner under our VAL selection criterion:**
    - Selecting by lowest VAL negative ELBO (`beta = 1`) among non-collapsed models (`>= 16` active units), I expect **`default` (`z=64, beta=1.0, warm-up on`)** (or closely **`z128`**) to win.
+
+##Study 2: Milestone 1, Latent Space Analysis (Member C)
+
+**Author: Nourhan Alaa (Member C, Latent Analysis)**
+
+Date written (before running t-SNE/UMAP, traversals, interpolations): 2026-11-26
+Predictions and Reasoning
+Flat-coated and curly-coated retriever will overlap the most in the latent space, because both are black dogs with a similar head shape.
+Dhole will sit close to the retrievers (brown dog-like body, similar poses and backgrounds).
+Terrapin and red-breasted merganser may partly overlap (water, mud and green backgrounds).
+Chain saw, water bottle and butternut squash will be more separated from the animal classes.
+Overall, classes will overlap a lot, because the VAE is trained only to reconstruct, so it groups images by colour, lighting and background, not by class.
+The most active latent dimensions will mostly encode global properties like brightness and background colour, not object identity.
